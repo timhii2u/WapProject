@@ -8,9 +8,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>ELEMENTARY APP</title>
   </head>
   <body>
-  $END$
+  <div>
+    <h1>LOGIN</h1>
+    <form method="post" action="app">
+
+      <div><span>USERNAME</span><input name="username" type="text"></div>
+      <div><span>PASSWORD</span><input name="passwd" type="password"></div>
+      <div><input name="sbmitBtn" type="submit" value="LOGIN" ></div>
+
+    </form>
+
+  </div>
   </body>
 </html>
