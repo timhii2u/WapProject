@@ -1,0 +1,25 @@
+nav{
+    background-color: blue;
+    color:white;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    overflow-x: hidden;
+    padding: 60px 20px;
+    transition: 0.5s;
+    /*font-family: 'Monoton', cursive;*/
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+nav ul{
+    list-style: none;
+    text-align: right;
+}
+nav ul li{
+    margin-bottom: 20px;
+    border: 1px solid lightpink;
+    padding: 5px;
+
+}
