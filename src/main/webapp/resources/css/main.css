@@ -23,3 +23,53 @@ nav ul li{
     padding: 5px;
 
 }
+.container{
+    float: right;
+    width: 900px;
+}
+
+.carousel .item {
+    height: 400px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%!important;
+    width: auto!important;
+    object-fit: cover;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 40px;
+    margin: 12px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 30px;
+}
+.sound{
+    right: 12%;
+    position: absolute;
+    bottom: 15%;
+    background-color: black;
+    border-color: #2e6da4;
+    padding: 10px 5px;
+    text-align: center;
+    color:white;
+}
+.sound > span{
+    vertical-align: baseline;
+    display: block;
+}
+.slide{
+    margin-bottom: 20px;
+}
