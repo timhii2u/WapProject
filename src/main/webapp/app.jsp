@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>APP</title>
-    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+<%--    <link rel="stylesheet" href="resources/css/bootstrap.min.css">--%>
     <link rel="stylesheet" href="resources/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Monoton|Montserrat+Alternates&display=swap" rel="stylesheet">
 </head>
@@ -15,10 +15,8 @@
     <ul>
         <li>NUMBERS</li>
         <li>COLORING</li>
-        <li>LEARN THE ALPHABET</li>
-        <li>CHILL WITH THE RYMES</li>
+        <li id="alph"><a href="alphabet">LEARN THE ALPHABET</a></li>
         <li>DANCING WITH THE STARS</li>
-        <li>MOVIE REVIEW</li>
     </ul>
 
 </nav>
