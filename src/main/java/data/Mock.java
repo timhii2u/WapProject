@@ -1,12 +1,14 @@
 package data;
 
 import app.Alphabet;
+import app.Numbers;
 
 import java.util.ArrayList;
 
 public class Mock {
 
     private ArrayList<Alphabet> alphabetList = new ArrayList<>();
+    private ArrayList<Numbers> numbersList = new ArrayList<>();
 
 
     public ArrayList<Alphabet> retrieveAlphabetList() {
@@ -39,5 +41,20 @@ public class Mock {
         alphabetList.add(new Alphabet("z"));
 
         return alphabetList;
+    }
+    public ArrayList<Numbers> retrieveNumbersList() {
+
+        numbersList.add(new Numbers("0"));
+        numbersList.add(new Numbers("1"));
+        numbersList.add(new Numbers("2"));
+        numbersList.add(new Numbers("3"));
+        numbersList.add(new Numbers("4"));
+        numbersList.add(new Numbers("5"));
+        numbersList.add(new Numbers("6"));
+        numbersList.add(new Numbers("7"));
+        numbersList.add(new Numbers("8"));
+        numbersList.add(new Numbers("9"));
+
+        return numbersList;
     }
 }

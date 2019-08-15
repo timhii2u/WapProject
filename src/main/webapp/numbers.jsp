@@ -27,14 +27,13 @@
 
 </nav>
 <div class="container">
-    <h2>LEARN THE ALPHABET</h2>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <h2>LEARN COUNTING</h2>
+    <div id="numCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
 
-            <c:forEach var="elem" items="${alphabetList}">
-                <li data-target="#myCarousel" data-slide-to="<c:out value='${alphabetList.indexOf(elem)}'/>" ></li>
-
+            <c:forEach var="elem" items="${numbersList}">
+                <li data-target="#numCarousel" data-slide-to="<c:out value='${numbersList.indexOf(elem)}'/>" ></li>
             </c:forEach>
 
         </ol>
@@ -42,20 +41,20 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
 
-            <c:forEach var="elem" items="${alphabetList}">
+            <c:forEach var="elem" items="${numbersList}">
                 <div class="item">
-
-                    <img src="resources/images/<c:out value='${elem.sound}'/>.png" alt="${elem.sound}" style="width:100%;">
+                    <span id="${elem.sound}">${elem.sound}</span>
+<%--                    <img src="resources/images/<c:out value='${elem.sound}'/>.png" alt="${elem.sound}" style="width:100%;">--%>
                 </div>
             </c:forEach>
         </div>
 
         <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <a class="left carousel-control" href="#numCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <a class="right carousel-control" href="#numCarousel" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -63,16 +62,16 @@
         <div class="sound">
             <span>Listen to Audio</span>
             <audio id="soundFile" controls>
-                <source id="sourceFile" src="resources/sounds/<c:out value='${alphabetList.get(0).sound}'/>.mp3"/>
+                <source id="sourceFile" src="resources/sounds/<c:out value='${numbersList.get(0).sound}'/>.mp3"/>
             </audio>
         </div>
 
     </div>
 
-    <div id="alph-flex-container" class="flex-container">
-        <c:forEach var="elem" items="${alphabetList}">
+    <div id="num-flex-container" class="flex-container">
+        <c:forEach var="elem" items="${numbersList}">
 
-            <div id="<c:out value='${alphabetList.indexOf(elem)}'/>"><a>${elem.sound}</a> </div>
+            <div id="<c:out value='${numbersList.indexOf(elem)}'/>"><a>${elem.sound}</a> </div>
 
         </c:forEach>
 
