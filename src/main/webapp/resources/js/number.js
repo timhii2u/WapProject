@@ -24,7 +24,7 @@ $("#refresh").click(function(){
  
 
 function success(data){
-	 $("#title").text("Drag And Drop Number To It's Corresponding Word Name");
+	 $("#title").text("Start Puzzle");
 	
 	$("#number-left").empty();
 	$("#number-right").empty();
@@ -166,7 +166,7 @@ function dragDrop(){
 	 } 
 	 
 	 if(countDrop == 10){
-		 $("#title").text("Please Click On Refresh To Continue......");
+		 $("#title").text("Click On Refresh To Continue..");
 		 $('#myModal').modal('show');
 	 }
 	 
@@ -176,7 +176,6 @@ function getRandomInt(min, max) {
 	  return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
- 
 	
 })();
 
