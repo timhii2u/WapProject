@@ -2,7 +2,10 @@
 
 <html>
 <head>
-    <title>Alphabet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NUMBER SOUNDS</title>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -16,27 +19,30 @@
 <header>
 
 </header>
-<nav>
-    <ul>
-        <li>NUMBERS</li>
-        <li>COLORING</li>
-        <li id="alph"><a href="alphabet">LEARN THE ALPHABET</a></li>
-        <li id="num"><a href="numbers">LEARN COUNTING</a></li>
-        <li>DANCING WITH THE STARS</li>
-    </ul>
+<div id="mySidebar" class="sidebar">
+    <a class="closebtn"><img src="resources/images/close.png"></a>
+    <a href="app">HOME</a>
+    <a href="numberList">SOLVE THE NUMBER PUZZLE</a>
+    <a id="shadeBtn" href="shade">LEARN TO COLOR</a>
+    <a href="alphabet">LEARN THE ALPHABET</a>
+    <a href="numbers">LEARN TO COUNT</a>
+    <a href="stars">CHILL WITH THE SPIDERMAN</a>
+</div>
+<div id="main">
+    <button class="openbtn"><img src="resources/images/menu.png"> MENU</button>
+    <div id="sidebarNote">
+        <h2>COUNTING</h2>
+        <p>Grasping Numerals</p>
+        <p>This is creates a foundation for children to learn how to count</p>
+        <img src="resources/images/pg.png">
 
-</nav>
+    </div>
+</div>
+
 <div class="container">
-    <h2>LEARN COUNTING</h2>
+    <h2>LEARN TO COUNT</h2>
     <div id="numCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
 
-            <c:forEach var="elem" items="${numbersList}">
-                <li data-target="#numCarousel" data-slide-to="<c:out value='${numbersList.indexOf(elem)}'/>" ></li>
-            </c:forEach>
-
-        </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
