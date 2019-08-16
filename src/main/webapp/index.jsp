@@ -31,6 +31,7 @@
   </div>
   <div class="container">
     <img src="resources/images/welcome.png">
+
   </div>
   </body>
 </html>

@@ -2,13 +2,16 @@ package data;
 
 import app.Alphabet;
 import app.Numbers;
+import app.Numerals;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Mock {
 
     private ArrayList<Alphabet> alphabetList = new ArrayList<>();
     private ArrayList<Numbers> numbersList = new ArrayList<>();
+    private ArrayList<Numerals> numbers = new ArrayList<>();
 
 
     public ArrayList<Alphabet> retrieveAlphabetList() {
@@ -42,6 +45,8 @@ public class Mock {
 
         return alphabetList;
     }
+    
+    
     public ArrayList<Numbers> retrieveNumbersList() {
 
         numbersList.add(new Numbers("0"));
@@ -57,4 +62,30 @@ public class Mock {
 
         return numbersList;
     }
+    
+    public List<Numerals> numberList(){
+    	numbers.add(new Numerals(1,"One"));
+    	numbers.add(new Numerals(2,"Two"));
+    	numbers.add(new Numerals(3,"Three"));
+    	numbers.add(new Numerals(4,"Four"));
+    	numbers.add(new Numerals(5,"Five"));
+    	numbers.add(new Numerals(6,"SIx"));
+    	numbers.add(new Numerals(7,"Seven"));
+    	numbers.add(new Numerals(8,"Eight"));
+    	numbers.add(new Numerals(9,"Nine"));
+    	numbers.add(new Numerals(10,"Ten"));
+    	numbers.add(new Numerals(20,"Twenty"));
+    	numbers.add(new Numerals(30,"Thirty"));
+    	numbers.add(new Numerals(40,"Fourty"));
+    	numbers.add(new Numerals(50,"Fifty"));
+    	numbers.add(new Numerals(60,"Sixty"));
+    	numbers.add(new Numerals(70,"Seventy"));
+    	numbers.add(new Numerals(80,"Eighty"));
+    	numbers.add(new Numerals(90,"Ninety"));
+    	numbers.add(new Numerals(100,"One Hundred"));
+    	numbers.add(new Numerals(1000,"One Thousand"));
+    	
+    	return numbers;
+    }
+    
 }
