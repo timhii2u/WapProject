@@ -18,7 +18,7 @@
       <div><span>USERNAME</span><input name="username" type="text"></div>
       <div><span>PASSWORD</span><input name="passwd" type="password"></div>
       <div><input name="sbmitBtn" type="submit" value="LOGIN" ></div>
-
+      
     </form>
 
   </div>
