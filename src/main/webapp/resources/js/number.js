@@ -17,15 +17,20 @@ function fail(){
 	alert("Error happened");
 }
 
+
+$("#refresh").click(function(){
+	start();
+});
  
 
 function success(data){
-	 
+	 $("#title").text("Drag And Drop Number To It's Corresponding Word Name");
+	
 	$("#number-left").empty();
 	$("#number-right").empty();
 	$("#ans-left").empty();
 	$("#ans-right").empty();
-	
+
 	let count = 0;
 	
 	  for(let i = 0 ; i< 10 ; i++){
@@ -161,12 +166,10 @@ function dragDrop(){
 	 } 
 	 
 	 if(countDrop == 10){
-		 
-		 alert("Congraturations .....you have finished this phase");
-		 start();
+		 $("#title").text("Please Click On Refresh To Continue......");
+		 $('#myModal').modal('show');
 	 }
 	 
-	
 }
 
 function getRandomInt(min, max) {
