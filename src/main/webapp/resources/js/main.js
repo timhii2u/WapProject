@@ -170,8 +170,11 @@ $(function () {
             brush.size= this.value;
         });
     }
-    $(init);
-    
+
+    $("#shadeBtn").on("click",function () {
+        init();
+    });
+
     function collectImages() {
         $.post("shade")
             .done(function (data) {
@@ -190,4 +193,19 @@ $(function () {
         }
     })
 
+    /*NAV BAR STYLES*/
+
+    function openNav() {
+        $("#mySidebar").css("width","400px")
+        $("#main").css("width","25%")
+
+    }
+
+    function closeNav() {
+        $("#mySidebar").css("width","0")
+        $("#main").css("marginLeft","0")
+    }
+
+    $(".closebtn").click(closeNav);
+    $(".openbtn").click(openNav);
 })

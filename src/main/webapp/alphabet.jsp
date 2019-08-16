@@ -16,28 +16,20 @@
 <header>
 
 </header>
-<nav>
-    <ul>
-        <li>NUMBERS</li>
-        <li id="shading"><a href="shade">LEARN TO COLOR</a></li>
-        <li id="alph"><a href="alphabet">LEARN THE ALPHABET</a></li>
-        <li id="num"><a href="numbers">LEARN TO COUNT</a></li>
-        <li>DANCING WITH THE STARS</li>
-    </ul>
-
-</nav>
+<div id="mySidebar" class="sidebar">
+    <a class="closebtn"><img src="resources/images/close.png"></a>
+    <a href="shade">LEARN TO COLOR</a>
+    <a href="alphabet">LEARN THE ALPHABET</a>
+    <a href="numbers">LEARN TO COUNT</a>
+    <a href="stars">CHILL WITH THE SPIDERMAN</a>
+</div>
+<div id="main">
+    <button class="openbtn"><img src="resources/images/menu.png"> MENU</button>
+</div>
 <div class="container">
     <h2>LEARN THE ALPHABET</h2>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
-
-            <c:forEach var="elem" items="${alphabetList}">
-                <li data-target="#myCarousel" data-slide-to="<c:out value='${alphabetList.indexOf(elem)}'/>" ></li>
-
-            </c:forEach>
-
-        </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
