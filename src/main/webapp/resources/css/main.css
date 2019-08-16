@@ -1,6 +1,6 @@
 body{
     font-family: 'Monoton', cursive;
-
+    margin: 0;
 }
 nav{
     background-color: blue;
@@ -29,7 +29,8 @@ nav ul li{
 }
 .container{
     float: right;
-    width: 900px;
+    width: 65vw;
+    overflow: hidden;
 }
 
 .carousel .item {
@@ -95,3 +96,26 @@ li a, li a:hover{
     text-decoration: none;
 
 }
+
+
+/*color styles*/
+.color-picker-container{
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    border-bottom: 2px solid black;
+    position: absolute;
+    width: 60vw;
+}
+.color-picker-container *{
+    margin: 5px 10px;
+}
+#draw{
+    display: block;
+    /*background-color: red;*/
+    background-image: url("../images/a.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+

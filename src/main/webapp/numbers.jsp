@@ -19,15 +19,15 @@
 <nav>
     <ul>
         <li>NUMBERS</li>
-        <li>COLORING</li>
+        <li id="shading"><a href="shade">LEARN TO COLOR</a></li>
         <li id="alph"><a href="alphabet">LEARN THE ALPHABET</a></li>
-        <li id="num"><a href="numbers">LEARN COUNTING</a></li>
+        <li id="num"><a href="numbers">LEARN TO COUNT</a></li>
         <li>DANCING WITH THE STARS</li>
     </ul>
 
 </nav>
 <div class="container">
-    <h2>LEARN COUNTING</h2>
+    <h2>LEARN TO COUNT</h2>
     <div id="numCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">

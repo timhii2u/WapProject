@@ -19,9 +19,9 @@
 <nav>
     <ul>
         <li>NUMBERS</li>
-        <li>COLORING</li>
+        <li id="shading"><a href="shade">LEARN TO COLOR</a></li>
         <li id="alph"><a href="alphabet">LEARN THE ALPHABET</a></li>
-        <li id="num"><a href="numbers">LEARN COUNTING</a></li>
+        <li id="num"><a href="numbers">LEARN TO COUNT</a></li>
         <li>DANCING WITH THE STARS</li>
     </ul>
 
