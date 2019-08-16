@@ -6,8 +6,8 @@ $(document).ready(function(){
 })
 
 function start(){
-	$.ajax("/ElementaryApp/numberList",
-			{"type" : "get"})
+	$.ajax("numberList",
+			{"type" : "post"})
 	.done(success)
 	.fail(fail);
 	
