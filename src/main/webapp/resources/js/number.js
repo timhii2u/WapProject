@@ -17,15 +17,20 @@ function fail(){
 	alert("Error happened");
 }
 
+
+$("#refresh").click(function(){
+	start();
+});
  
 
 function success(data){
-	 
+	 $("#title").text("Start Puzzle");
+	
 	$("#number-left").empty();
 	$("#number-right").empty();
 	$("#ans-left").empty();
 	$("#ans-right").empty();
-	
+
 	let count = 0;
 	
 	  for(let i = 0 ; i< 10 ; i++){
@@ -161,19 +166,16 @@ function dragDrop(){
 	 } 
 	 
 	 if(countDrop == 10){
-		 
-		 alert("Congraturations .....you have finished this phase");
-		 start();
+		 $("#title").text("Click On Refresh To Continue..");
+		 $('#myModal').modal('show');
 	 }
 	 
-	
 }
 
 function getRandomInt(min, max) {
 	  return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
- 
 	
 })();
 

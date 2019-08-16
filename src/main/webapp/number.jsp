@@ -52,38 +52,54 @@
     </div>
 </div>
 <div class="container">
-    <h2>SOLVE NUMBER PUZZLE</h2>
-
-    <div id="context" class="row" class="context">
-
-        <div class="col-md-3" id="number-left">
-
-        </div>
-
-        <div class="col-md-6" id="ans">
-
-            <div id="ans-left" class="col-md-6">
-
-
-            </div>
-
-            <div id="ans-right" class="col-md-6">
-
-            </div>
-
-
-        </div>
-
-        <div class="col-md-3"   id="number-right">
-
-        </div>
-
+      <div id="context" class="row" class="context">
+    <div id="header">
+    <p id="title">Start Puzzle</p>
+    <input type="image" id="refresh" src="resources/images/reload2.ico" alt="Refresh" width="48" height="48">
+     </div>
+    <div class="col-md-3" id="number-left">
+    
     </div>
-
+    
+     <div class="col-md-6" id="ans">
+     
+     <div id="ans-left" class="col-md-6">
+    
+     
+     </div>
+     
+      <div id="ans-right" class="col-md-6">
+      
+     </div>
+     
+     
+    </div>
+    
+     <div class="col-md-3"   id="number-right">
+    
+    </div>
+    
+    </div>
+    
     <div id="popup" style ="display:none">
     </div>
-    <script src="resources/js/number.js" type="text/javascript"></script>
-
+    
+    
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div id="modal-img" class="modal-body">
+          <img alt="Congratulations........You have passed the test" src="resources/images/congrats.gif" width="100%" >
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+    
+ <script src="resources/js/number.js" type="text/javascript"></script>
 
 </div>
 

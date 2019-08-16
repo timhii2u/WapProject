@@ -72,6 +72,30 @@
 	
 }
 
+#refresh{
+	float : right;
+	margin-right: 30px;
+}
+
+#title{
+	display :inline-block;
+}
+
+#header{
+	
+	height : 50px;
+    background-color: gainsboro;
+    text-align: center;
+ 
+}
+
+#header > p{
+	font-size: xx-large;
+	font-family: fantasy;
+    font-weight: bolder;
+    margin-top: 4px;
+}
+
 .hovered{
 	border: dashed 2px black
 }
