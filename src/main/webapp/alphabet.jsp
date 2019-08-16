@@ -2,7 +2,10 @@
 
 <html>
 <head>
-    <title>Alphabet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALPHABET SOUNDS</title>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -18,13 +21,22 @@
 </header>
 <div id="mySidebar" class="sidebar">
     <a class="closebtn"><img src="resources/images/close.png"></a>
-    <a href="shade">LEARN TO COLOR</a>
+    <a href="app">HOME</a>
+    <a href="numberList">SOLVE THE NUMBER PUZZLE</a>
+    <a id="shadeBtn" href="shade">LEARN TO COLOR</a>
     <a href="alphabet">LEARN THE ALPHABET</a>
     <a href="numbers">LEARN TO COUNT</a>
     <a href="stars">CHILL WITH THE SPIDERMAN</a>
 </div>
 <div id="main">
     <button class="openbtn"><img src="resources/images/menu.png"> MENU</button>
+    <div id="sidebarNote">
+        <h2>Recite The Alphabet</h2>
+        <p>There is no greater theme than the Alphabet for the young ones</p>
+        <p>This is the very basis of Speaking; To learn the letters of the Alphabet</p>
+        <img src="resources/images/pg.png">
+
+    </div>
 </div>
 <div class="container">
     <h2>LEARN THE ALPHABET</h2>

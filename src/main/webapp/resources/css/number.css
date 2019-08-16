@@ -6,6 +6,7 @@
 #context{
 	width: 100%;
 	background-color : gray;
+	padding: 10px;
 }
 .box{
 	position : relative;
@@ -36,7 +37,7 @@
 	width :110px;
 	height :110px;
 	background-image:url("../images/emptyDiv.png");
-	margin:10px;
+	margin:5px 10px;
 	position: relative;
 	background-size: 90px 90px;
 	background-repeat: no-repeat;
@@ -45,14 +46,12 @@
 	
 	
 }
-	 
-
 
 .empty1{
 	width :110px;
 	height :110px;
 	background-color: yellow;
-	margin:10px;
+	margin:5px 10px;
 	position: relative
 	 
 }

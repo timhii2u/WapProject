@@ -147,9 +147,10 @@ $(function () {
 
         })
 
-
         $('#save-btn').click(function () {
-            window.open(canvas[0].toDataURL());
+            var dataURL = canvas[0].toDataURL('image/png');
+            console.log("path::"+dataURL);
+            window.open('about:blank', 'image from canvas').document.write("<img src='" + dataURL + "' alt='from canvas'/>");
         });
 
         $('#undo-btn').click(function () {
@@ -171,9 +172,7 @@ $(function () {
         });
     }
 
-    $("#shadeBtn").on("click",function () {
-        init();
-    });
+    $(init);
 
     function collectImages() {
         $.post("shade")
@@ -205,7 +204,11 @@ $(function () {
         $("#mySidebar").css("width","0")
         $("#main").css("marginLeft","0")
     }
+    function closeTip(e) {
+        $("#sidebarNote").hide();
+    }
 
     $(".closebtn").click(closeNav);
+    $("#closetip").click(closeTip);
     $(".openbtn").click(openNav);
 })

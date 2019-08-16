@@ -22,28 +22,30 @@ public class NumberServlet extends HttpServlet {
 	
 	 protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		 try {
+
+			 PrintWriter writer = response.getWriter();
+			 Mock data = new Mock();
+			 List<Numerals> numbersList = data.numberList();
+
+			 // request.setAttribute("numerals",numbersList);
+			 // RequestDispatcher view = request.getRequestDispatcher("numbers.jsp");
+			 // view.forward(request,response);
+
+			 String jsonList = new Gson().toJson(numbersList);
+			 response.setContentType("application/json");
+			 response.setCharacterEncoding("UTF-8");
+			 writer.write(jsonList);
+
+		 }catch(Exception e) {
+
+		 }
 	    }
 
 	    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	      
-	    	try {
-	    		
-	    		PrintWriter writer = response.getWriter();
-	    		Mock data = new Mock();
-		        List<Numerals> numbersList = data.numberList();
 
-		       // request.setAttribute("numerals",numbersList);
-		       // RequestDispatcher view = request.getRequestDispatcher("numbers.jsp");
-		       // view.forward(request,response);
-	    		
-		        String jsonList = new Gson().toJson(numbersList);
-		        response.setContentType("application/json");
-		        response.setCharacterEncoding("UTF-8");
-		        writer.write(jsonList);
-		     
-	    	}catch(Exception e) {
-	    		
-	    	}
+			RequestDispatcher view = request.getRequestDispatcher("number.jsp");
+			view.forward(request,response);
 	    	
 	    	
 	    }
